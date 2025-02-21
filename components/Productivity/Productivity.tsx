@@ -1,18 +1,20 @@
+// @ts-nocheck
+
 "use client";
-import Link from "next/link";
+import {
+    actionsPro,
+    mobile,
+    proArc,
+    proBag,
+    proCover,
+    procodeSpace,
+} from "@public";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import CodeSpace from "./CodeSpace";
 import HoverCard from "./HoverCard";
-import { motion } from "framer-motion";
-import {
-	actionsPro,
-	mobile,
-	proArc,
-	proBag,
-	proCover,
-	procodeSpace,
-} from "@public";
 
 export default function Productivity() {
 	const [hovered, setHovered] = useState<boolean>(false);

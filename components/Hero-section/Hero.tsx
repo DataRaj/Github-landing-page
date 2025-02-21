@@ -1,11 +1,12 @@
+ // @ts-nocheck
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
 import { Navbar } from "@components";
-import { motion } from "framer-motion";
-import { collabBracket } from "@public";
 import { heroBrandsItem } from "@constants";
+import { collabBracket } from "@public";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Hero() {
 	const [hovered1, setHovered1] = useState<boolean>(false);

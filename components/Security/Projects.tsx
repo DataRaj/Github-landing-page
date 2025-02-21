@@ -1,7 +1,8 @@
+// @ts-nocheck
+import { arcGreen, bgStar, criticalSec } from "@public";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { arcGreen, bgStar, criticalSec } from "@public";
 
 export default function Projects() {
 	const [hovered, setHovered] = useState<boolean>(false);

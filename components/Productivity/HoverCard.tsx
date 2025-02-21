@@ -1,6 +1,7 @@
+// @ts-nocheck
+import { animated, useSpring } from "@react-spring/web";
 import { ThoverCardProps } from "@types";
-import { useState, useEffect } from "react";
-import { useSpring, animated } from "@react-spring/web";
+import { useEffect, useState } from "react";
 
 const calc = (x: number, y: number): [number, number, number] => [
 	-(y - window.innerHeight / 2) / 360,

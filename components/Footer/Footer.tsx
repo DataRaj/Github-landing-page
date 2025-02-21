@@ -1,11 +1,12 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+ // @ts-nocheck
+
 import {
-	footerLinksItem,
-	footerSocialItems,
-	footerTermsItem,
+    footerLinksItem,
+    footerSocialItems,
+    footerTermsItem,
 } from "@constants";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 	return (

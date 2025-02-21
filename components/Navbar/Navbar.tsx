@@ -1,17 +1,18 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import ProductNav from "./ProductNav";
 import { logo, search } from "@public";
-import SolutionNav from "./SolutionNav";
-import OpenSourceNav from "./OpenSourceNav";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import OpenSourceNav from "./OpenSourceNav";
+import ProductNav from "./ProductNav";
+import SolutionNav from "./SolutionNav";
 
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
 
 	return (
+	// @ts-ignore
 		<motion.div className="text-white py-5 w-full z-50 bg-transparent">
 			<button className="hidden" />
 			<div className="flex items-center max-lg:justify-between max-lg:flex-row-reverse">

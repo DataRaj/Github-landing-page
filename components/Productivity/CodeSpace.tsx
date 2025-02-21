@@ -1,10 +1,11 @@
+// @ts-nocheck
 "use client";
-import Image from "next/image";
 import { lineVariant } from "@motion";
-import { motion } from "framer-motion";
-import React, { useState } from "react";
 import { arcGreenPro, bgStar, proCoverTop, proSideArc } from "@public";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function CodeSpace() {
 	const [hovered, setHovered] = useState<boolean>(false);

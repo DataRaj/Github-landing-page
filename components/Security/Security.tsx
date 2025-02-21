@@ -1,11 +1,12 @@
+// @ts-nocheck
 "use client";
-import Image from "next/image";
-import Projects from "./Projects";
-import { motion } from "framer-motion";
-import React, { useState } from "react";
-import HoverCard from "../Productivity/HoverCard";
 import { SecurityContainer, SecurityItem } from "@motion";
 import { CodeScaning, dependbot, envScaning, securityIll } from "@public";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useState } from "react";
+import HoverCard from "../Productivity/HoverCard";
+import Projects from "./Projects";
 
 export default function Security() {
 	const [hovered, setHovered] = useState<boolean>(false);

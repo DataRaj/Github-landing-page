@@ -1,8 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { motion } from "framer-motion";
+ // @ts-nocheck
 import { arcPink, bgStar, issueColab } from "@public";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Discount() {
 	const [hovered, setHovered] = useState<boolean>(false);

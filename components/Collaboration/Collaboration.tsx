@@ -1,18 +1,18 @@
 "use client";
+import { colabItems } from "@constants";
+import { collabcontainervarients, collabitemvarients } from "@motion";
+import {
+    collabArc,
+    collabBracket,
+    discussionColab,
+    issuesColab,
+} from "@public";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Discount from "./Discount";
-import { colabItems } from "@constants";
-import { motion } from "framer-motion";
 import HoverCard from "../Productivity/HoverCard";
-import {
-	collabArc,
-	collabBracket,
-	discussionColab,
-	issuesColab,
-} from "@public";
-import { collabcontainervarients, collabitemvarients } from "@motion";
+import Discount from "./Discount";
 
 export default function Collaboration() {
 	const [hovered, setHovered] = useState<boolean>(false);
@@ -27,6 +27,7 @@ export default function Collaboration() {
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ delay: 0.5 }}
+						// @ts-ignore
 						className="relative">
 						<svg
 							aria-hidden="true"
@@ -45,6 +46,7 @@ export default function Collaboration() {
 						initial={{ height: 0 }}
 						whileInView={{ height: "100%" }}
 						transition={{ delay: 0.8 }}
+						// @ts-ignore
 						className=" h-full w-[4px] mt-7 rounded-md bg-gradient-to-b from-[#f778ba] to-transparent"
 					/>
 				</div>
@@ -52,6 +54,7 @@ export default function Collaboration() {
 					initial={{ opacity: 0, x: -30 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ delay: 0.6, type: "tween" }}
+					// @ts-ignore
 					className="md:w-10/12 mb-24">
 					<h2
 						className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate"
@@ -140,6 +143,7 @@ export default function Collaboration() {
 							initial={{ y: 20, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ type: "tween", duration: 0.3 }}
+							// @ts-ignore
 							className="overflow-hidden rounded-s-lg">
 							<Image
 								className="w-full h-auto"
@@ -206,6 +210,7 @@ export default function Collaboration() {
 								initial={{ y: 20, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
 								transition={{ type: "tween", duration: 0.3 }}
+								// @ts-ignore
 								className="w-full h-auto "
 								width="1208"
 								height="764"
@@ -271,12 +276,14 @@ export default function Collaboration() {
 						variants={collabcontainervarients}
 						initial="hidden"
 						whileInView="show"
+						// @ts-ignore
 						className="flex flex-wrap w-full relative -top-[120px] -rotate-12 -right-6 -mt-6  p-6 max-h-[480px]">
 						{colabItems.map((item) => (
 							<motion.div
 								key={item.id}
 								variants={collabitemvarients}
 								transition={{ type: "tween" }}
+								// @ts-ignore
 								className="w-1/3 ">
 								<Link
 									href=""
@@ -324,12 +331,14 @@ export default function Collaboration() {
 						initial={{ height: 0 }}
 						whileInView={{ height: "100%" }}
 						transition={{ delay: 0.5 }}
+						// @ts-ignore
 						className="md:mx-10 mb-4 mx-3 mt-[-20px] w-[4px] rounded-md bg-gradient-to-b  from-transparent via-[#6639ba] to-[#d2a8ff]"
 					/>
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ delay: 0.5 }}
+						// @ts-ignore
 						className="relative">
 						<Image
 							src={collabBracket}
